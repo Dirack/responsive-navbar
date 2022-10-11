@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Estudo navbar 2</title>
+	<link rel="stylesheet" href="navbar2.css">
+</head>
+<body>
+	<nav>
+		<div for="check" class="hamburger__container">
+			<button class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<label class="logo">DesignX</label>
+		<ul class="menu">
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Feedback</a></li>
+		</ul>
+	</nav>
+	<script>
+		document.querySelector('.hamburger').addEventListener('click',()=>{
+			document.querySelector('.menu').classList.toggle('show');
+		});
+	</script>
+</body>
+</html>
