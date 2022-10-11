@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Estudo navbar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<nav>
+		<div class="container">
+			<h1>Tyler Posts</h1>
+			<div class="menu">
+				<a href="#" class="is-active">Home</a>
+				<a href="#">About</a>
+				<a href="#">Projects</a>
+				<a href="#">Contact</a>
+			</div>
+			<button class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</nav>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		hamburger.addEventListener('click',()=>{
+			hamburger.classList.toggle('is-active');
+		});
+	</script>
+</body>
+</html>
